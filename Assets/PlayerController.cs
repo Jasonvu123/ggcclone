@@ -27,12 +27,12 @@ public class PlayerController : MonoBehaviour
      moveHorizontal = Input.GetAxisRaw("Horizontal");  
      moveVertical = Input.GetAxisRaw("Vertical");   
 
-     Debug.Log(moveVertical);
+    // Debug.Log(moveVertical);
      if (Input.GetKey(KeyCode.Space) && !isJumping)
         {
             if (transform.position.y < 1) 
             {
-                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                    
                
             }
 
